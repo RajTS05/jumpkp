@@ -1,0 +1,494 @@
+body
+{
+    
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(10px,auto );
+    background: #000000;  
+    background: linear-gradient(to bottom, #434343, #000000); 
+    background-size: cover ;
+    background-repeat: no-repeat;
+
+}
+
+header
+{
+   grid-row: 1/2;
+   grid-column: 1/13;
+   display: grid;
+   grid-template-columns: repeat(12,1fr);
+   grid-auto-rows: minmax(100,auto );
+   margin-bottom: 0;
+}
+
+main
+{   
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(400px,auto );
+    grid-column: 4/9;
+    grid-row: 5/6;
+    justify-content: center;
+    align-content: center;
+}
+
+aside
+{   grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100,auto );
+    align-items: end;
+    margin-top: 40px;
+}
+
+
+
+
+.gridRows
+{
+    border: 2px solid #f7fcfd;
+    margin: 1px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    padding: 1px;
+    font-size: 25px;
+    color: #d7385e;
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0),rgb(0, 0, 0));
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    transition:0.04 ease-in-out;
+
+}
+
+.border
+{
+   
+}
+
+
+
+
+
+
+
+
+
+
+.gridRows:hover
+{
+  opacity: 0.7;
+  border: tomato 1px solid;
+  transition: translate 4s;
+}
+
+main #container
+{   grid-column: 1/13;
+    border: 4px solid white;
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+
+    cursor: pointer;
+    font-size: 50px;
+    background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  rgba(116,147,179,1) 0%, rgba(62,83,104,1) 100.2% );
+    
+}
+h1
+{
+    color: #c70039;
+    margin:  auto auto;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+aside .topleft
+{
+    grid-column: 4/10;
+    grid-row: 1/2;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.topright
+{
+    grid-column: 6/8;
+    grid-row: 4/5;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+h3
+{
+   
+    font-size: 280px;
+    grid-column: 1/6;
+    margin: 0;
+    width: 100%;
+    color: #c70039;
+    font-family: 'Marck Script', cursive;
+}
+.tl
+{
+   color:  #d7385e;
+   font-family: 'Libre Baskerville', serif;
+}
+
+h2
+{   margin: 0;
+    font-family: 'Lobster', cursive;
+    color: #ddb9c3;
+}
+
+#container .click
+{   
+    color: #c70039;
+    grid-column: 1/6;
+    margin: auto auto;
+    width: 100%;
+    font-family: 'Girassol', cursive;
+}
+h4
+{
+    grid-column: 1/6;
+    font-size: 70px;
+    color: #c70039;
+    display: inline;
+    font-family: 'Kalam', cursive;
+}
+
+.red
+{
+  background-color: red;
+}
+
+.green
+{
+  background-color: green;
+}
+
+.newGame
+{
+ text-decoration: none;
+ color:  #d7385e;
+ box-shadow:inset 0px 1px 0px 0px #cf866c;
+ background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+ background-color:#d0451b;
+ border-radius:3px;
+ border:1px solid #942911;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-size:13px;
+ padding:14px 35px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #854629;
+
+}
+
+.newGame:hover
+{
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+
+
+.newGame:active
+{
+    position:relative;
+	top:1px;
+}
+
+.timer
+{
+    font-size: 25px;
+    text-align: center;
+    grid-column: 11/13;
+    grid-row: 5/9;
+    margin-left: 20px;
+   
+}
+
+#level
+{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: thistle;
+    margin-bottom: 40px;
+    background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  rgba(116,147,179,1) 0%, rgba(62,83,104,1) 100.2% );
+    border:3px solid white;
+    border-radius:5px;
+    padding: 10px;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 51px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    
+}
+
+#he
+{
+    font-family: 'Girassol', cursive;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color:#dfdfdf;
+    border-radius: 1px solid #bc3315 ;
+    padding: 12px 52px;
+  
+}
+.myButton :active {
+	position:relative;
+	top:1px;
+}
+ 
+
+.lvl
+{
+    margin-top: 20px;
+}
+
+h5
+{
+    color: #d7385e;;
+    display: inline;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.hscore
+{
+    text-align: center;
+    font-size: 25px;
+    grid-row: 5/9;
+    grid-column: 9/12;
+}
+
+h6
+{
+    color: #c70039;
+    grid-column: 1/6;
+    margin: auto auto;
+    width: 100%;
+    font-family: 'Girassol', cursive;
+    font-size: 100px;
+}
+
+
+
+.grid
+{
+   mix-blend-mode: hard-light;
+   background: linear-gradient(transparent,rgb(19, 19, 20));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:760px)
+{   
+    body
+    {  
+       display: grid;
+       grid-template-columns: repeat(12,1fr);
+       
+    }
+    
+
+    main
+    {   
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-auto-rows: minmax(300px,auto );
+        grid-column: 2/12;
+        
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 60px;
+    }
+    
+    aside
+    {
+        
+        margin-top: 0;
+        margin-bottom: 0;
+        border: solid 1px white;
+        grid-row: 1/2;
+        margin-bottom: 10px;
+    }
+    
+
+    
+    main #container
+    {   
+        border: 2px solid white;
+        grid-auto-rows: minmax(70px,auto);
+        font-size: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    #container .click
+    {   
+        color: #c70039;
+        margin: auto auto;
+        width: 100%;
+        font-size: 50px;
+        font-family: 'Girassol', cursive;
+    }
+    h2
+    {   margin: 0;
+        font-size: 30px;
+    }
+
+    aside .topleft
+    {
+        grid-column: 3/11;
+        grid-row: 1/2;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .topright
+    {    
+        margin-top: 40px;
+        grid-column: 5/9;
+        grid-row: 2/3;
+        margin-bottom: 0;
+    }
+
+        
+    header
+    {
+       grid-row: 1/2;
+       grid-column: 1/13;
+       display: grid;
+       grid-template-columns: repeat(12,1fr);
+       grid-auto-rows: minmax(60px,auto );
+       margin-bottom: 50px;
+       
+    }
+
+    .tl
+    {
+        font-size: 15px;
+    }
+
+    .hscore
+    {
+        text-align: center;
+        font-size: 20px;
+        grid-row: 3/4;
+        grid-column: 1/13;
+        margin-top: 80px; 
+        margin-bottom: 40px;
+       
+    }
+
+    .timer
+    {
+        font-size: 20px;
+        text-align: center;
+        grid-column: 1/13;
+        grid-row: 4/5; 
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    h3
+    {
+       
+        font-size: 200px;
+        grid-column: 1/13;
+        margin: 0;
+        width: 100%;
+    }
+
+    h4
+    {
+        grid-column: 1/13;
+        font-size: 30px;
+        color: red;
+        display: inline;
+    }
+
+    .topright
+    {
+        grid-row: 3/4;
+        margin-top: 20px;
+        grid-column: 5/13;
+        margin-left: 23px;
+        font-size: 10px;
+      
+    
+        
+        
+    }
+    #level
+    {   margin-top:0 ;
+        grid-row: 2/3;
+        padding: 5px;
+        grid-column: 4/10;
+        margin-bottom: 35px;
+        margin-left: 0;
+        margin-top: 20px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-right: 0;
+        min-width: 70%;
+    }
+
+    .newGame
+    {
+        padding: 10px 10px;
+        margin-left: 0px;
+        font-size: 13px;
+        
+    }
+    
+    h5
+    {
+        color: white;
+    }
+    h6
+    {
+        font-size: 60px;
+    }
+
+
+}
